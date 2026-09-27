@@ -18,13 +18,22 @@
       .image-container { text-align: center; }
       .image-container img { max-width: 500px; width: 100%; height: auto; display: block; }
       .text-with-symbols { margin-top: 20px; }
+      .venus-symbol {
+        animation: fadeInOut 6s infinite;
+      }
+      @keyframes fadeInOut {
+        0% { opacity: 0; }
+        33% { opacity: 1; }
+        66% { opacity: 1; }
+        100% { opacity: 0; }
+      }
     </style>
   </head>
   <body>
     <div class="image-container">
       <img src="lo saben.jpg" alt="Lo Saben" />
       <div class="text-with-symbols">
-        ♀ lo saben ♀
+        <span class="venus-symbol">♀</span> lo saben <span class="venus-symbol">♀</span>
       </div>
     </div>
   </body>
